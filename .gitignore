@@ -7,5 +7,5 @@ log
 _rel
 relx
 rebar
+*.tar.gz
 /arch
-/arch.tar.gz
