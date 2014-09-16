@@ -1,0 +1,12 @@
+{application, cowdock, [
+	{description, ""},
+	{vsn, "0.0.0"},
+	{registered, [cowdock_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+		cowboy
+	]},
+	{mod, { cowdock, []}},
+	{env, []}
+]}.
