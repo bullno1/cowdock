@@ -2,5 +2,6 @@ FROM scratch
 MAINTAINER Bach Le
 ADD arch.tar.gz/ /
 EXPOSE 8080
-CMD ["/opt/cowdock/bin/cowdock", "console"]
-ADD release.tar.gz/ /opt/
+CMD ["foreground"]
+ENTRYPOINT ["/opt/cowdock/bin/cowdock"]
+ADD release.tar.gz/ /opt/cowdock

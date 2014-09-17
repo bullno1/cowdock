@@ -2,7 +2,8 @@
 set -e
 
 mkdir arch
-sudo pacstrap -c -d arch busybox glibc zlib
+sudo pacstrap -c -d arch busybox glibc openssl
+sudo pacman --root `pwd`/arch -Rdds perl
 sudo sh -c 'chown -R $SUDO_USER:users arch'
 cd arch
 bin/busybox --list | while read cmd
